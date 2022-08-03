@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.main-body {
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+
+    .content-desc {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .about {
+            transform: translateX(-100%);
+            font-size: 13rem;
+            position: absolute;
+            left: 0%;
+            top: -70%;
+            color: rgba(0, 0, 0, 0.159);
+            font-family: 'Oswald', sans-serif;
+            transition: 1.5s ease-in-out;
+        }
+
+        .desc {
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: 900;
+            width: 60%;
+            margin-right: 200px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.3rem;
+        }
+    }
+
+    .app-content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 200px;
+
+        .desc-app {
+            padding: 40px;
+            width: 50%;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: 'Roboto', sans-serif;
+            transition: 1.5s ease-in-out;
+            div {
+                .linguage {
+                    color: rgba(0, 0, 0, 0.159);
+                    font-size: 3rem;
+                    font-weight: 800;
+                    margin-bottom: 80px;
+                    transition: 1.5s ease-in-out;
+                }
+
+                .project {
+                    font-size: 2.3rem;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.735);
+                    margin-bottom: 30px;
+                }
+
+                .desc-projeto {
+                    color: rgba(0, 0, 0, 0.735);
+                    font-size: 1.9rem;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    font-style: italic;
+                }
+            }
+
+            .system {
+                font-size: 2.5rem;
+                color: rgba(0, 0, 0, 0.361);
+                font-family: 'Oswald', sans-serif;
+            }
+        }
+
+
+        .image-app {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                .bottonMarginPhoto {
+                    margin-bottom: 150px;
+                }
+
+                img {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
