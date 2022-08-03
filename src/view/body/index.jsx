@@ -4,6 +4,9 @@ import Png1 from "../../image/png1.png"
 import Png2 from "../../image/png2.png"
 import Png3 from "../../image/png3.png"
 import Png4 from "../../image/png4.png"
+import PicPayPng1 from "../../image/picpay-png1.png"
+import PicPayPng2 from "../../image/picpay-png2.png"
+import PicPayPng3 from "../../image/picpay-png3.png"
 
 
 const Body = () => {
@@ -59,20 +62,19 @@ const Body = () => {
                 <div id="desc-second-app" className="desc-app">
                     <div>
                         <div className="linguage">React Native</div>
-                        <div className="project">Nubank</div>
-                        <div className="desc-projeto">Nubank é uma empresa startup brasileira pioneira no segmento de serviços financeiros, atuando como operadora de cartões de crédito e fintech com operações no Brasil, sediada em São Paulo e fundada em 6 de maio de 2013 por David Vélez, Cristina Junqueira e Edward Wible. </div>
+                        <div className="project">PicPay</div>
+                        <div className="desc-projeto">O PicPay é um aplicativo fintech brasileiro, criado por pessoas do estado do Espírito Santo, disponível para download em celular dos sistemas operacionais Android e iOS, que funciona como uma carteira digital.</div>
                     </div>
                     <div className="system">Android APP</div>
                 </div>
 
                 <div className="image-app">
                     <div>
-                        <img className="bottonMarginPhoto" src={Png1} alt="" />
-                        <img src={Png2} alt="" />
+                        <img className="bottonMarginPhoto" src={PicPayPng1} alt="" />
+                        <img src={PicPayPng2} alt="" />
                     </div>
                     <div>
-                        <img className="bottonMarginPhoto" src={Png3} alt="" />
-                        <img src={Png4} alt="" />
+                        <img className="bottonMarginPhoto" src={PicPayPng3} alt="" />
                     </div>
                 </div>
             </div>
