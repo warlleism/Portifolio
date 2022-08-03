@@ -7,6 +7,9 @@ import Png4 from "../../image/png4.png"
 import PicPayPng1 from "../../image/picpay-png1.png"
 import PicPayPng2 from "../../image/picpay-png2.png"
 import PicPayPng3 from "../../image/picpay-png3.png"
+import QuattrorPng1 from "../../image/quattrorPng1.png"
+import QuattrorPng2 from "../../image/quattrorPng2.png"
+import QuattrorPng3 from "../../image/quattrorPng3.png"
 
 
 const Body = () => {
@@ -20,11 +23,13 @@ const Body = () => {
         const about = window.document.getElementById("about")
         const descApp = window.document.getElementById("desc-app")
         const descSecondApp = window.document.getElementById("desc-second-app")
+        const descThirdApp = window.document.getElementById("desc-third-app")
         window.addEventListener("scroll", () => {
             console.log(window.scrollY)
             window.scrollY <= 0 ? about.style.transform = "translateX(-100%)" : about.style.transform = "translateX(5%)"
             window.scrollY <= 1000 ? descApp.style.transform = "translateX(-100%)" : descApp.style.transform = "translateX(0%)"
             window.scrollY <= 2500 ? descSecondApp.style.transform = "translateX(-100%)" : descSecondApp.style.transform = "translateX(0%)"
+            window.scrollY <= 4513 ? descThirdApp.style.transform = "translateX(-100%)" : descThirdApp.style.transform = "translateX(0%)"
         })
     }
 
@@ -75,6 +80,25 @@ const Body = () => {
                     </div>
                     <div>
                         <img className="bottonMarginPhoto" src={PicPayPng3} alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="app-content">
+                <div id="desc-third-app" className="desc-app">
+                    <div>
+                        <div className="linguage">ReactJS</div>
+                        <div className="project">Quattror Serviços S/A</div>
+                        <div className="desc-projeto">A Quattror se destaca no mercado nacional e internacional pela qualidade, transparência, otimização de tempo e custos na prestação dos serviços de Exportação, Importação e Logística em geral, incluindo administração, coordenação, acompanhamento e execução de todo o processo.</div>
+                    </div>
+                    <div className="system">WEB APP</div>
+                </div>
+
+                <div className="image-web">
+                    <div>
+                        <img src={QuattrorPng1} alt="" />
+                        <img className="img-margin-left" src={QuattrorPng2} alt="" />
+                        <img src={QuattrorPng3} alt="" />
                     </div>
                 </div>
             </div>

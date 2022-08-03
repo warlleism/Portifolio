@@ -50,6 +50,7 @@
             justify-content: space-between;
             font-family: 'Roboto', sans-serif;
             transition: 1.5s ease-in-out;
+
             div {
                 .linguage {
                     color: rgba(0, 0, 0, 0.159);
@@ -95,8 +96,38 @@
                     margin-bottom: 150px;
                 }
 
+                img:hover {
+                    transition: 1s;
+                    width: 420px;
+                }
+
                 img {
+                    width: 400px;
+                    transition: 1s;
                     margin-left: 20px;
+                }
+
+            }
+        }
+
+        .image-web {
+            .img-margin-left {
+                margin-left: 200px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                img:hover {
+                    max-width: 750px;
+                    transition: 1s;
+                }
+
+                img {
+                    max-width: 700px;
+                    transition: 1s;
                 }
             }
         }
