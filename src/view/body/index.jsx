@@ -10,6 +10,7 @@ import PicPayPng3 from "../../image/picpay-png3.png"
 import QuattrorPng1 from "../../image/quattrorPng1.png"
 import QuattrorPng2 from "../../image/quattrorPng2.png"
 import QuattrorPng3 from "../../image/quattrorPng3.png"
+import Footer from "../footer";
 
 
 const Body = () => {
@@ -35,75 +36,77 @@ const Body = () => {
 
 
     return (
-        <div className="main-body">
-            <div className="content-desc">
-                <div className="about" id="about">SOBRE MIM</div>
-                <div className="desc">Desenvolvedor Front-end completamente apaixonado pela programação. Com profundo interesse em novas tecnologias.</div>
+        <>
+            <div className="main-body">
+                <div className="content-desc">
+                    <div className="about" id="about">SOBRE MIM</div>
+                    <div className="desc">Desenvolvedor Front-end completamente apaixonado pela programação. Com profundo interesse em novas tecnologias.</div>
+                </div>
+
+                <div className="app-content">
+                    <div id="desc-app" className="desc-app">
+                        <div>
+                            <div className="linguage">React Native</div>
+                            <div className="project">Nubank</div>
+                            <div className="desc-projeto">Nubank é uma empresa startup brasileira pioneira no segmento de serviços financeiros, atuando como operadora de cartões de crédito e fintech com operações no Brasil, sediada em São Paulo e fundada em 6 de maio de 2013 por David Vélez, Cristina Junqueira e Edward Wible. </div>
+                        </div>
+                        <div className="system">Android APP</div>
+                    </div>
+
+                    <div className="image-app">
+                        <div>
+                            <img className="bottonMarginPhoto" src={Png1} alt="" />
+                            <img src={Png2} alt="" />
+                        </div>
+                        <div>
+                            <img className="bottonMarginPhoto" src={Png3} alt="" />
+                            <img src={Png4} alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="app-content">
+                    <div id="desc-second-app" className="desc-app">
+                        <div>
+                            <div className="linguage">React Native</div>
+                            <div className="project">PicPay</div>
+                            <div className="desc-projeto">O PicPay é um aplicativo fintech brasileiro, criado por pessoas do estado do Espírito Santo, disponível para download em celular dos sistemas operacionais Android e iOS, que funciona como uma carteira digital.</div>
+                        </div>
+                        <div className="system">Android APP</div>
+                    </div>
+
+                    <div className="image-app">
+                        <div>
+                            <img className="bottonMarginPhoto" src={PicPayPng1} alt="" />
+                            <img src={PicPayPng2} alt="" />
+                        </div>
+                        <div>
+                            <img className="bottonMarginPhoto" src={PicPayPng3} alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="app-content">
+                    <div id="desc-third-app" className="desc-app">
+                        <div>
+                            <div className="linguage">ReactJS</div>
+                            <div className="project">Quattror Serviços S/A</div>
+                            <div className="desc-projeto">A Quattror se destaca no mercado nacional e internacional pela qualidade, transparência, otimização de tempo e custos na prestação dos serviços de Exportação, Importação e Logística em geral, incluindo administração, coordenação, acompanhamento e execução de todo o processo.</div>
+                        </div>
+                        <div className="system">WEB APP</div>
+                    </div>
+
+                    <div className="image-web">
+                        <div>
+                            <img src={QuattrorPng1} alt="" />
+                            <img className="img-margin-left" src={QuattrorPng2} alt="" />
+                            <img src={QuattrorPng3} alt="" />
+                        </div>
+                    </div>
+                </div>
+                <Footer />
             </div>
-
-            <div className="app-content">
-                <div id="desc-app" className="desc-app">
-                    <div>
-                        <div className="linguage">React Native</div>
-                        <div className="project">Nubank</div>
-                        <div className="desc-projeto">Nubank é uma empresa startup brasileira pioneira no segmento de serviços financeiros, atuando como operadora de cartões de crédito e fintech com operações no Brasil, sediada em São Paulo e fundada em 6 de maio de 2013 por David Vélez, Cristina Junqueira e Edward Wible. </div>
-                    </div>
-                    <div className="system">Android APP</div>
-                </div>
-
-                <div className="image-app">
-                    <div>
-                        <img className="bottonMarginPhoto" src={Png1} alt="" />
-                        <img src={Png2} alt="" />
-                    </div>
-                    <div>
-                        <img className="bottonMarginPhoto" src={Png3} alt="" />
-                        <img src={Png4} alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <div className="app-content">
-                <div id="desc-second-app" className="desc-app">
-                    <div>
-                        <div className="linguage">React Native</div>
-                        <div className="project">PicPay</div>
-                        <div className="desc-projeto">O PicPay é um aplicativo fintech brasileiro, criado por pessoas do estado do Espírito Santo, disponível para download em celular dos sistemas operacionais Android e iOS, que funciona como uma carteira digital.</div>
-                    </div>
-                    <div className="system">Android APP</div>
-                </div>
-
-                <div className="image-app">
-                    <div>
-                        <img className="bottonMarginPhoto" src={PicPayPng1} alt="" />
-                        <img src={PicPayPng2} alt="" />
-                    </div>
-                    <div>
-                        <img className="bottonMarginPhoto" src={PicPayPng3} alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <div className="app-content">
-                <div id="desc-third-app" className="desc-app">
-                    <div>
-                        <div className="linguage">ReactJS</div>
-                        <div className="project">Quattror Serviços S/A</div>
-                        <div className="desc-projeto">A Quattror se destaca no mercado nacional e internacional pela qualidade, transparência, otimização de tempo e custos na prestação dos serviços de Exportação, Importação e Logística em geral, incluindo administração, coordenação, acompanhamento e execução de todo o processo.</div>
-                    </div>
-                    <div className="system">WEB APP</div>
-                </div>
-
-                <div className="image-web">
-                    <div>
-                        <img src={QuattrorPng1} alt="" />
-                        <img className="img-margin-left" src={QuattrorPng2} alt="" />
-                        <img src={QuattrorPng3} alt="" />
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </>
     )
 
 }

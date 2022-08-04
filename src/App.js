@@ -5,10 +5,10 @@ import Body from "./view/body";
 function App() {
 
   return (
-    <div>
+    <>
       <Header />
       <Body />
-    </div>
+    </>
   );
 }
 
