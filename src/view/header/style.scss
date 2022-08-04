@@ -58,3 +58,45 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .main-header {
+        width: 100vw;
+
+        .header-content {
+            .name-content {
+                .text {
+                    font-size: 5rem;
+                }
+            }
+
+            .cargo-content {
+                .text {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .main-header {
+        width: 100vw;
+
+        .header-content {
+            .name-content {
+                .text {
+                    font-size: 2.2rem;
+                }
+            }
+
+            .cargo-content {
+                .text {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}

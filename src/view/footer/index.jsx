@@ -19,8 +19,7 @@ const Footer = () => {
             window.scrollY <= 6580 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-30%)"
         })
     }
-
-
+    
     return (
         <div className="container-images">
             <div id="contact" className="text-contacts">Contatos</div>

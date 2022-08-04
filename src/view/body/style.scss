@@ -27,7 +27,7 @@
 
         .desc {
             color: rgba(0, 0, 0, 0.85);
-            font-weight: 900;
+            font-weight: 400;
             width: 60%;
             margin-right: 200px;
             font-family: 'Roboto', sans-serif;
@@ -40,7 +40,7 @@
         flex-direction: row;
         width: 100%;
         margin-top: 200px;
-
+        
         .desc-app {
             padding: 40px;
             width: 50%;
@@ -50,6 +50,10 @@
             justify-content: space-between;
             font-family: 'Roboto', sans-serif;
             transition: 1.5s ease-in-out;
+
+            .system {
+                margin-left: -22px;
+            }
 
             div {
                 .linguage {
@@ -76,11 +80,6 @@
                 }
             }
 
-            .system {
-                font-size: 2.5rem;
-                color: rgba(0, 0, 0, 0.676);
-                font-family: 'Oswald', sans-serif;
-            }
         }
 
 
@@ -132,4 +131,127 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-body {
+        width: 100%;
+        margin-top: 0px;
+
+        .content-desc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .about {
+                display: none;
+            }
+
+            .desc {
+                margin: 0 auto;
+                font-weight: 400;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+
+        .app-content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 200px;
+
+            .desc-app {
+                width: 100%;
+
+                div {
+                    transform: translateX(-18px);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    margin-bottom: -1200px;
+
+                    .linguage {
+                        font-size: 2.5rem;
+                        margin-bottom: 80px;
+                        transition: 1.5s ease-in-out;
+                    }
+
+                    .project {
+                        font-size: 1.5rem;
+                        margin-bottom: 30px;
+                    }
+
+                    .desc-projeto {
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .system {
+                    width: 100%;
+                    font-size: 2.5rem;
+                    margin-bottom: -800px;
+                }
+            }
+
+
+            .image-app {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .bottonMarginPhoto {
+                        margin-bottom: 0px;
+                    }
+
+                    img:hover {
+                        transition: 1s;
+                        width: 160px;
+                    }
+
+                    img {
+                        width: 160px;
+                        transition: 1s;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .image-web {
+                width: 100%;
+
+                .img-margin-left {
+                    margin-left: 200px;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    img:hover {
+                        max-width: 750px;
+                        transition: 1s;
+                    }
+
+                    img {
+                        max-width: 700px;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+
 }
