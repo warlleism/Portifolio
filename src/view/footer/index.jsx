@@ -16,10 +16,10 @@ const Footer = () => {
     const showAbout = () => {
         const contact = window.document.getElementById("contact")
         window.addEventListener("scroll", () => {
-            window.scrollY <= 6580 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-30%)"
+            window.scrollY < 5397 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-30%)"
         })
     }
-    
+
     return (
         <div className="container-images">
             <div id="contact" className="text-contacts">Contatos</div>

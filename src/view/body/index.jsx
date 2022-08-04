@@ -68,7 +68,7 @@ const Body = () => {
                 </div>
 
                 <div className="app-content">
-                    
+
                     <div id="desc-second-app" className="desc-app">
                         <div>
                             <div className="linguage">React Native</div>
@@ -89,7 +89,7 @@ const Body = () => {
                     </div>
                 </div>
 
-                {/* <div className="app-content">
+                <div className="app-content">
                     <div id="desc-third-app" className="desc-app">
                         <div>
                             <div className="linguage">ReactJS</div>
@@ -101,12 +101,12 @@ const Body = () => {
 
                     <div className="image-web">
                         <div>
-                            <img src={QuattrorPng2} alt="" />
-                            <img className="img-margin-left" src={QuattrorPng1} alt="" />
-                            <img src={QuattrorPng3} alt="" />
+                            <img className="img1" src={QuattrorPng2} alt="" />
+                            <img className="img1 img-margin-left" src={QuattrorPng1} alt="" />
+                            <img className="img1" src={QuattrorPng3} alt="" />
                         </div>
                     </div>
-                </div> */}
+                </div>
 
                 <Footer />
             </div>
