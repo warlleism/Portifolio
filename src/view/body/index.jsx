@@ -48,12 +48,12 @@ const Body = () => {
 
                     <div className="image-app">
                         <div>
-                            <img className="bottonMarginPhoto" src={require("../../image/png1.png")} alt="" />
-                            <img src={require("../../image/png2.png")} alt="" />
+                            <img className="bottonMarginPhoto" src={require("../../image/png2.png")} alt="" />
+                            <img src={require("../../image/png1.png")} alt="" />
                         </div>
                         <div>
                             <img className="bottonMarginPhoto" src={require("../../image/png3.png")} alt="" />
-                            <img src={require("../../image/png3.png")} alt="" />
+                            <img src={require("../../image/png4.png")} alt="" />
                         </div>
                     </div>
                 </div>

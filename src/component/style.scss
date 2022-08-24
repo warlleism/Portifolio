@@ -1,0 +1,37 @@
+.container-buttom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation-name: Animacao;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+#dropArrow {
+    font-size: 70px;
+    transition: 0.5s;
+}
+
+#dropArrow:hover {
+    cursor: pointer;
+    font-size: 90px;
+    transition: 0.5s
+}
+
+@keyframes Animacao {
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 30px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}

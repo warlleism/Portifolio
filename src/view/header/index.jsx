@@ -6,7 +6,6 @@ import "./style.scss"
 const Header = () => {
 
     useEffect(() => {
-        window.scrollTo(0, 0)
         showContent()
     }, [])
 

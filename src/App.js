@@ -1,20 +1,16 @@
-import { useEffect } from "react";
 import Header from "./view/header";
 import Body from "./view/body";
+import DropButtom from "./component/dropArrow";
 
 
 function App() {
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
-
   return (
-    <>
+    <div>
       <Header />
       <Body />
-    </>
+      <DropButtom />
+    </div>
   );
 }
 

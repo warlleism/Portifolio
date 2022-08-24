@@ -5,7 +5,6 @@ import "./style.scss"
 const Footer = () => {
 
     useEffect(() => {
-        window.scrollTo(0, 0)
         showAbout()
     }, [])
 
