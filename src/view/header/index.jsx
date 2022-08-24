@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import "./style.scss"
 
 
@@ -29,7 +30,7 @@ const Header = () => {
                     <div className="board" ></div>
                 </div>
                 <div className="cargo-content">
-                    <div className="text" id="desc">Front-end Developer </div>
+                    <div className="text" id="desc" >Front-end Developer </div>
                     <div className="board" ></div>
                 </div>
             </div>

@@ -138,12 +138,12 @@
 
 @media screen and (max-width: 768px) {
 
-    .img1{
+    .img1 {
         max-width: 430px !important;
     }
 
     .main-body {
-        width: 100%;
+        width: 100vw;
         margin-top: 0px;
 
         .content-desc {
@@ -166,7 +166,7 @@
         }
 
         .app-content {
-            display: flex;
+            overflow: hidden;
             flex-direction: column;
             margin-top: 200px;
 
@@ -209,10 +209,7 @@
 
             .image-app {
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                margin-left: -8px;
 
                 div {
                     width: 100%;
@@ -236,33 +233,6 @@
                     }
                 }
             }
-
-            .image-web {
-                width: 100%;
-
-                .img-margin-left {
-                    align-self: center;
-                    max-width: 340px !important;
-                    height: 220px;
-                    margin-left: 0px;
-                }
-
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-
-                    img:hover {
-                        max-width: 600px;
-                        transition: 1s;
-                    }
-
-                    img {
-                        max-width: 600px;
-                        transition: 1s;
-                    }
-                }
-            }
         }
     }
 
@@ -270,14 +240,18 @@
 
 @media screen and (max-width: 320px) {
 
-    
+    .image-app {
 
-    .main-body {
-        .app-content {
-            .image-web {
-                .img-margin-left {
-                    max-width: 280px !important;
-                }
+        div {
+            img:hover {
+                transition: 1s;
+                width: 120px !important;
+            }
+
+            img {
+                width: 120px !important;
+                transition: 1s;
+                margin-left: 20px;
             }
         }
     }

@@ -1,22 +1,12 @@
 import React, { useEffect } from "react";
-import "./style.scss"
-import Png1 from "../../image/png1.png"
-import Png2 from "../../image/png2.png"
-import Png3 from "../../image/png3.png"
-import Png4 from "../../image/png4.png"
-import PicPayPng1 from "../../image/picpay-png1.png"
-import PicPayPng2 from "../../image/picpay-png2.png"
-import PicPayPng3 from "../../image/picpay-png3.png"
-import QuattrorPng1 from "../../image/quattrorPng1.png"
-import QuattrorPng2 from "../../image/quattrorPng2.png"
-import QuattrorPng3 from "../../image/quattrorPng3.png"
 import Footer from "../footer";
 
+import "./style.scss"
 
 const Body = () => {
 
     useEffect(() => {
-        // window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
         showAbout()
     }, [])
 
@@ -25,6 +15,7 @@ const Body = () => {
         const descApp = window.document.getElementById("desc-app")
         const descSecondApp = window.document.getElementById("desc-second-app")
         const descThirdApp = window.document.getElementById("desc-third-app")
+
         window.addEventListener("scroll", () => {
             console.log(window.scrollY)
             window.scrollY <= 0 ? about.style.transform = "translateX(-100%)" : about.style.transform = "translateX(5%)"
@@ -57,12 +48,12 @@ const Body = () => {
 
                     <div className="image-app">
                         <div>
-                            <img className="bottonMarginPhoto" src={Png1} alt="" />
-                            <img src={Png2} alt="" />
+                            <img className="bottonMarginPhoto" src={require("../../image/png1.png")} alt="" />
+                            <img src={require("../../image/png2.png")} alt="" />
                         </div>
                         <div>
-                            <img className="bottonMarginPhoto" src={Png3} alt="" />
-                            <img src={Png4} alt="" />
+                            <img className="bottonMarginPhoto" src={require("../../image/png3.png")} alt="" />
+                            <img src={require("../../image/png3.png")} alt="" />
                         </div>
                     </div>
                 </div>
@@ -80,32 +71,38 @@ const Body = () => {
 
                     <div className="image-app">
                         <div>
-                            <img className="bottonMarginPhoto" src={PicPayPng1} alt="" />
-                            <img src={PicPayPng2} alt="" />
+                            <img className="bottonMarginPhoto" src={require("../../image/picpay-png1.png")} alt="" />
+                            <img src={require("../../image/picpay-png2.png")} alt="" />
                         </div>
                         <div>
-                            <img className="bottonMarginPhoto" src={PicPayPng3} alt="" />
+                            <img className="bottonMarginPhoto" src={require("../../image/picpay-png3.png")} alt="" />
                         </div>
                     </div>
+
                 </div>
 
                 <div className="app-content">
+
                     <div id="desc-third-app" className="desc-app">
                         <div>
-                            <div className="linguage">ReactJS</div>
-                            <div className="project">Quattror Serviços S/A</div>
-                            <div className="desc-projeto">A Quattror se destaca no mercado nacional e internacional pela qualidade, transparência, otimização de tempo e custos na prestação dos serviços de Exportação, Importação e Logística em geral, incluindo administração, coordenação, acompanhamento e execução de todo o processo.</div>
+                            <div className="linguage">React Native</div>
+                            <div className="project">Clone Spotify</div>
+                            <div className="desc-projeto">Spotify é um serviço de streaming de música, podcast e vídeo que foi lançado oficialmente em 7 de outubro de 2008. É o serviço de streaming de música mais popular e usado do mundo. Ele é desenvolvido pela startup Spotify AB em Estocolmo, Suécia.</div>
                         </div>
-                        <div className="system">WEB APP</div>
+                        <div className="system">Android APP</div>
                     </div>
 
-                    <div className="image-web">
+                    <div className="image-app">
                         <div>
-                            <img className="img1" src={QuattrorPng2} alt="" />
-                            <img className="img1 img-margin-left" src={QuattrorPng1} alt="" />
-                            <img className="img1" src={QuattrorPng3} alt="" />
+                            <img className="bottonMarginPhoto" src={require("../../image/spotify1.png")} alt="" />
+                            <img src={require("../../image/spotify2.png")} alt="" />
+                        </div>
+                        <div>
+                            <img className="bottonMarginPhoto" src={require("../../image/spotify3.png")} alt="" />
+                            <img className="bottonMarginPhoto" src={require("../../image/spotify4.png")} alt="" />
                         </div>
                     </div>
+
                 </div>
 
                 <Footer />

@@ -42,6 +42,8 @@
             position: relative;
 
             .text {
+                display: flex;
+                justify-content: center;
                 color: rgba(0, 0, 0, 0.505);
                 font-size: 60px;
                 transition: 1s ease-in-out;
@@ -94,7 +96,7 @@
 
             .cargo-content {
                 .text {
-                    font-size: 2.2rem;
+                    font-size: 2rem;
                 }
             }
         }
