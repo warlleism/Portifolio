@@ -41,7 +41,7 @@ const Header = () => {
                     <div className="board" style={{ backgroundColor: mode ? "" : "#454645" }}></div>
                 </div>
                 <div className="cargo-content" >
-                    <div className="text" id="desc" style={{ color: mode ? "" : "#ffff" }}>Front-end Developer </div>
+                    <div className="text" id="desc" style={{ color: mode ? "" : "#ffffff2e" }}>Front-end Developer </div>
                     <div className="board" style={{ backgroundColor: mode ? "" : "#454645" }}></div>
                 </div>
             </div>
