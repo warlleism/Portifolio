@@ -32,7 +32,6 @@ const Header = () => {
         })
     }
 
-
     return (
         <div className="main-header" style={{ backgroundColor: mode ? "" : "#454645" }}>
             <div className="header-content" style={{ backgroundColor: mode ? "" : "#454645" }}>
@@ -40,7 +39,7 @@ const Header = () => {
                     <div className="text" id="name" style={{ color: mode ? "" : "#ffff" }}>Warllei Martins</div>
                     <div className="board" style={{ backgroundColor: mode ? "" : "#454645" }}></div>
                 </div>
-                <div className="cargo-content" >
+                <div className="cargo-content" style={{ backgroundColor: mode ? "" : "#454645" }}>
                     <div className="text" id="desc" style={{ color: mode ? "" : "#ffffff2e" }}>Front-end Developer </div>
                     <div className="board" style={{ backgroundColor: mode ? "" : "#454645" }}></div>
                 </div>
