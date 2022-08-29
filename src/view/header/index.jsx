@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 
 import "./style.scss"
 
-
 const Header = () => {
 
     useEffect(() => {

@@ -6,7 +6,6 @@ import "./style.scss"
 const Body = () => {
 
     useEffect(() => {
-        window.scrollTo(0, 0)
         showAbout()
     }, [])
 
@@ -17,11 +16,11 @@ const Body = () => {
         const descThirdApp = window.document.getElementById("desc-third-app")
 
         window.addEventListener("scroll", () => {
-            console.log(window.scrollY)
-            window.scrollY <= 0 ? about.style.transform = "translateX(-100%)" : about.style.transform = "translateX(5%)"
-            window.scrollY <= 1000 ? descApp.style.transform = "translateX(-100%)" : descApp.style.transform = "translateX(0%)"
-            window.scrollY <= 2500 ? descSecondApp.style.transform = "translateX(-100%)" : descSecondApp.style.transform = "translateX(0%)"
-            window.scrollY <= 4513 ? descThirdApp.style.transform = "translateX(-100%)" : descThirdApp.style.transform = "translateX(0%)"
+            console.log(parseInt(window.scrollY))
+            parseInt(window.scrollY) <= 0 ? about.style.transform = "translateX(-100%)" : about.style.transform = "translateX(5%)"
+            parseInt(window.scrollY) <= 1000 ? descApp.style.transform = "translateX(-100%)" : descApp.style.transform = "translateX(0%)"
+            parseInt(window.scrollY) <= 2500 ? descSecondApp.style.transform = "translateX(-100%)" : descSecondApp.style.transform = "translateX(0%)"
+            parseInt(window.scrollY) <= 4513 ? descThirdApp.style.transform = "translateX(-100%)" : descThirdApp.style.transform = "translateX(0%)"
         })
     }
 

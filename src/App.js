@@ -1,16 +1,17 @@
+import DropButtom from "./component/dropArrow";
 import Header from "./view/header";
 import Body from "./view/body";
-import DropButtom from "./component/dropArrow";
-
+import UpArrow from "./component/upArrow";
 
 function App() {
 
   return (
-    <div>
+    <>
       <Header />
       <Body />
       <DropButtom />
-    </div>
+      <UpArrow />
+    </>
   );
 }
 
