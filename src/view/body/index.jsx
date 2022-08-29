@@ -1,9 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import { Context } from "../../context/provider";
 import Footer from "../footer";
 
 import "./style.scss"
 
 const Body = () => {
+
+    const { mode } = useContext(Context);
 
     useEffect(() => {
         showAbout()
@@ -27,22 +30,20 @@ const Body = () => {
 
     return (
         <>
-            <div className="main-body">
-
-                <div className="content-desc">
-                    <div className="about" id="about">SOBRE MIM</div>
-                    <div className="desc">Desenvolvedor Front-end completamente apaixonado pela programação. Com profundo interesse em novas tecnologias.</div>
+            <div className="main-body" style={{ backgroundColor: mode ? "" : "#454645" }}>
+                <div className="content-desc" style={{ backgroundColor: mode ? "" : "#454645" }}>
+                    <div className="about" id="about" style={{ color: mode ? "" : "#ffffff2e" }}>SOBRE MIM</div>
+                    <div className="desc" style={{ color: mode ? "" : "#ffff" }}>Desenvolvedor Front-end completamente apaixonado pela programação. Com profundo interesse em novas tecnologias.</div>
                 </div>
 
-                <div className="app-content">
-
+                <div className="app-content" style={{ backgroundColor: mode ? "" : "#454645" }}>
                     <div id="desc-app" className="desc-app">
                         <div>
-                            <div className="linguage">React Native</div>
-                            <div className="project">Clone Nubank</div>
-                            <div className="desc-projeto">Nubank é uma empresa startup brasileira pioneira no segmento de serviços financeiros, atuando como operadora de cartões de crédito e fintech com operações no Brasil, sediada em São Paulo e fundada em 6 de maio de 2013 por David Vélez, Cristina Junqueira e Edward Wible. </div>
+                            <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>React Native</div>
+                            <div className="project" style={{ color: mode ? "" : "#ffff" }}>Clone Nubank</div>
+                            <div className="desc-projeto" style={{ color: mode ? "" : "#ffff" }}>Nubank é uma empresa startup brasileira pioneira no segmento de serviços financeiros, atuando como operadora de cartões de crédito e fintech com operações no Brasil, sediada em São Paulo e fundada em 6 de maio de 2013 por David Vélez, Cristina Junqueira e Edward Wible. </div>
                         </div>
-                        <div className="system">Android APP</div>
+                        <div className="system" style={{ color: mode ? "" : "#ffff" }}>Android APP</div>
                     </div>
 
                     <div className="image-app">
@@ -57,15 +58,16 @@ const Body = () => {
                     </div>
                 </div>
 
-                <div className="app-content">
+
+                <div className="app-content" style={{ backgroundColor: mode ? "" : "#454645" }}>
 
                     <div id="desc-second-app" className="desc-app">
                         <div>
-                            <div className="linguage">React Native</div>
-                            <div className="project">Clone PicPay</div>
-                            <div className="desc-projeto">O PicPay é um aplicativo fintech brasileiro, criado por pessoas do estado do Espírito Santo, disponível para download em celular dos sistemas operacionais Android e iOS, que funciona como uma carteira digital.</div>
+                            <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>React Native</div>
+                            <div className="project" style={{ color: mode ? "" : "#ffff" }}>Clone PicPay</div>
+                            <div className="desc-projeto" style={{ color: mode ? "" : "#ffff" }}>O PicPay é um aplicativo fintech brasileiro, criado por pessoas do estado do Espírito Santo, disponível para download em celular dos sistemas operacionais Android e iOS, que funciona como uma carteira digital.</div>
                         </div>
-                        <div className="system">Android APP</div>
+                        <div className="system" style={{ color: mode ? "" : "#ffff" }}>Android APP</div>
                     </div>
 
                     <div className="image-app">
@@ -80,15 +82,16 @@ const Body = () => {
 
                 </div>
 
-                <div className="app-content">
+
+                <div className="app-content" style={{ backgroundColor: mode ? "" : "#454645" }}>
 
                     <div id="desc-third-app" className="desc-app">
                         <div>
-                            <div className="linguage">React Native</div>
-                            <div className="project">Clone Spotify</div>
-                            <div className="desc-projeto">Spotify é um serviço de streaming de música, podcast e vídeo que foi lançado oficialmente em 7 de outubro de 2008. É o serviço de streaming de música mais popular e usado do mundo. Ele é desenvolvido pela startup Spotify AB em Estocolmo, Suécia.</div>
+                            <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>React Native</div>
+                            <div className="project" style={{ color: mode ? "" : "#ffff" }}>Clone Spotify</div>
+                            <div className="desc-projeto" style={{ color: mode ? "" : "#ffff" }}>Spotify é um serviço de streaming de música, podcast e vídeo que foi lançado oficialmente em 7 de outubro de 2008. É o serviço de streaming de música mais popular e usado do mundo. Ele é desenvolvido pela startup Spotify AB em Estocolmo, Suécia.</div>
                         </div>
-                        <div className="system">Android APP</div>
+                        <div className="system" style={{ color: mode ? "" : "#ffff" }}>Android APP</div>
                     </div>
 
                     <div className="image-app">
@@ -103,8 +106,9 @@ const Body = () => {
                     </div>
 
                 </div>
-
-                <Footer />
+                <div className="footerContent" style={{ backgroundColor: mode ? "" : "#454645" }}>
+                    <Footer />
+                </div>
             </div>
         </>
     )

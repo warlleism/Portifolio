@@ -10,6 +10,17 @@
 .main-header {
     width: 100%;
     height: 100vh;
+    position: relative;
+
+    .darkMode{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        cursor: pointer;
+        .modeIcon{
+            font-size: 2rem;
+        }
+    }
 
     .header-content {
         position: absolute;

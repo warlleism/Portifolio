@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import { Context } from "../../context/provider";
 
 import "./style.scss"
 
 const Footer = () => {
+
+    const { mode } = useContext(Context);
 
     useEffect(() => {
         showAbout()
@@ -17,7 +20,7 @@ const Footer = () => {
 
     return (
         <div className="container-images">
-            <div id="contact" className="text-contacts">Contatos</div>
+            <div id="contact" className="text-contacts" style={{ color: mode ? "" : "#ffff" }}>Contatos</div>
             <div className="contacts">
                 <a href="https://www.linkedin.com/in/warllei-martins-823510153/" target="blank"><img src={require("../../image/icons/linkedin.png")} alt="" /></a>
                 <a href="https://github.com/warlleism" target="blank"><img src={require("../../image/icons/github.png")} alt="" /></a>
