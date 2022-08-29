@@ -2,13 +2,11 @@ import React, { useEffect } from "react";
 
 const UpArrow = () => {
 
-
     useEffect(() => {
         showAbout()
     }, [])
 
     const showAbout = () => {
-
         var btn = document.getElementById("upArrow")
         window.addEventListener("scroll", () => {
             parseInt(window.scrollY) <= 200 ? btn.style.display = "none" : btn.style.display = "block";
