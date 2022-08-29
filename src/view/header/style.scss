@@ -12,12 +12,13 @@
     height: 100vh;
     position: relative;
 
-    .darkMode{
+    .darkMode {
         position: absolute;
         right: 30px;
         top: 30px;
         cursor: pointer;
-        .modeIcon{
+
+        .modeIcon {
             font-size: 2rem;
         }
     }
