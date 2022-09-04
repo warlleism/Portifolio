@@ -36,7 +36,7 @@
             position: relative;
 
             .text {
-                font-size: 7rem;
+                font-size: 1rem;
                 transition: 1s ease-in-out;
                 font-family: 'Dancing Script', cursive;
             }
@@ -57,7 +57,7 @@
                 display: flex;
                 justify-content: center;
                 color: rgba(0, 0, 0, 0.505);
-                font-size: 60px;
+                font-size: 1rem;
                 transition: 1s ease-in-out;
                 font-family: 'Roboto', sans-serif;
             }
@@ -81,7 +81,7 @@
         .header-content {
             .name-content {
                 .text {
-                    font-size: 5rem;
+                    font-size: 2.5rem;
                 }
             }
 
@@ -94,7 +94,7 @@
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 471px) {
 
     .main-header {
         width: 100vw;
@@ -109,35 +109,6 @@
             .cargo-content {
                 .text {
                     font-size: 2rem;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 280px) {
-
-    .main-header {
-        width: 100vw;
-
-        .header-content {
-            .name-content {
-                .text {
-                    font-size: 2.2rem;
-                }
-
-                .board {
-                    display: none;
-                }
-            }
-
-            .cargo-content {
-                .text {
-                    font-size: 2rem;
-                }
-
-                .board {
-                    display: none;
                 }
             }
         }
