@@ -19,7 +19,7 @@ const Footer = () => {
     }
 
     return (
-        <div className="container-images">
+        <div className="container-images" style={{ backgroundColor: mode ? "" : "#454645" }}>
             <div id="contact" className="text-contacts" style={{ color: mode ? "" : "#ffff" }}>Contatos</div>
             <div className="contacts">
                 <a href="https://www.linkedin.com/in/warllei-martins-823510153/" target="blank"><img src={require("../../image/icons/linkedin.png")} alt="" /></a>

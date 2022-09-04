@@ -76,7 +76,7 @@ const Body = () => {
                             <img src={require("../../image/picpay-png2.png")} alt="" />
                         </div>
                         <div>
-                            <img className="bottonMarginPhoto" src={require("../../image/picpay-png3.png")} alt="" />
+                            <img className="thirdPhoto" src={require("../../image/picpay-png3.png")} alt="" />
                         </div>
                     </div>
 
@@ -104,11 +104,8 @@ const Body = () => {
                             <img className="bottonMarginPhoto" src={require("../../image/spotify4.png")} alt="" />
                         </div>
                     </div>
-
                 </div>
-                <div className="footerContent" style={{ backgroundColor: mode ? "" : "#454645" }}>
                     <Footer />
-                </div>
             </div>
         </>
     )

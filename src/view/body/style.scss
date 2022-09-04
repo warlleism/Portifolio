@@ -2,13 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 
+
 .main-body {
     width: 100%;
     height: 100vh;
-
-    .footerContent {
-        height: 30%;
-    }
 
     .content-desc {
         position: relative;
@@ -64,6 +61,11 @@
             }
 
             div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
                 .linguage {
                     color: rgba(0, 0, 0, 0.159);
                     font-size: 3rem;
@@ -80,6 +82,8 @@
                 }
 
                 .desc-projeto {
+                    text-align: center;
+                    width: 90%;
                     color: rgba(0, 0, 0, 0.735);
                     font-size: 1.9rem;
                     font-weight: 300;
@@ -143,7 +147,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .img1 {
         max-width: 430px !important;
@@ -180,7 +184,6 @@
         .app-content {
             overflow: hidden;
             flex-direction: column;
-            margin-bottom: -66%;
 
             .desc-app {
                 width: 100%;

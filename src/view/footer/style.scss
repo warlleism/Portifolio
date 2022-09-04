@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 .container-images {
-    // margin-top: 500px;
     width: 100%;
+    height: 300px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -32,19 +32,11 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .container-images {
-        margin-top: 200px;
-
-
-        .text-contacts {
-            display: none;
-        }
 
         .contacts {
-            margin-top: 100px;
-
             padding: 10px;
             margin-left: 0px;
             justify-content: space-between;
@@ -53,6 +45,29 @@
             img {
                 max-width: 60px;
             }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-images {
+
+        .text-contacts {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .container-images {
+        margin-top: 0px;
+
+        .text-contacts {
+            display: none;
         }
     }
 
