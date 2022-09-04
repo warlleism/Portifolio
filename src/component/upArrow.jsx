@@ -25,7 +25,7 @@ const UpArrow = () => {
     }, [])
 
     return (
-        <div id="upArrow" style={{ display: "none", position: "fixed", top: "88vh", right: 10, backgroundColor: "#00000029", borderRadius: "50%" }}>
+        <div id="upArrow" style={{ display: "none", position: "fixed", top: "88vh", right: 10, backgroundColor: "#00000029", borderRadius: "50%", zIndex: 99999 }}>
             <span className="material-symbols-outlined" id="dropArrow" style={{ color: mode ? "black" : "#ffff" }}>
                 expand_less
             </span>

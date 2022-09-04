@@ -20,46 +20,36 @@
 
     .contacts {
         z-index: 999;
-        margin-left: 300px;
+        margin-top: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 60%;
 
+        a {
+            height: 60px;
+        }
+
         img {
-            max-width: 120px;
+            max-width: 70%;
         }
     }
 }
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 1787px) {
     .container-images {
-
         .contacts {
             padding: 10px;
             margin-left: 0px;
             justify-content: space-between;
-            width: 100%;
+            width: 70%;
 
-            img {
-                max-width: 60px;
-            }
         }
     }
 
 }
 
-@media screen and (max-width: 768px) {
 
-    .container-images {
-
-        .text-contacts {
-            display: none;
-        }
-    }
-
-}
 
 @media screen and (max-width: 360px) {
 
