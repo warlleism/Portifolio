@@ -24,12 +24,10 @@ const Header = () => {
     const showContent = () => {
         let name = window.document.getElementById("name")
         let desc = window.document.getElementById("desc")
-        window.addEventListener("load", () => {
-            name.style.transform = "translateY(-130px)";
-            setTimeout(() => {
-                desc.style.transform = "translateY(-130px)";
-            }, 900)
-        })
+        name.style.transform = "translateY(-130px)";
+        setTimeout(() => {
+            desc.style.transform = "translateY(-130px)";
+        }, 900)
     }
 
     return (
