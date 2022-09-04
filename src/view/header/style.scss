@@ -41,13 +41,13 @@
                 font-family: 'Dancing Script', cursive;
             }
 
-            .board {
-                width: 100%;
-                top: 0;
-                height: 140px;
-                position: absolute;
-                background-color: white;
-            }
+            // .board {
+            //     width: 100%;
+            //     top: 0;
+            //     height: 140px;
+            //     position: absolute;
+            //     background-color: white;
+            // }
         }
 
         .cargo-content {
@@ -62,13 +62,13 @@
                 font-family: 'Roboto', sans-serif;
             }
 
-            .board {
-                width: 100%;
-                height: 140px;
-                position: absolute;
-                background-color: white;
-                top: 0;
-            }
+            // .board {
+            //     width: 100%;
+            //     height: 140px;
+            //     position: absolute;
+            //     background-color: white;
+            //     top: 0;
+            // }
         }
     }
 }
@@ -83,11 +83,19 @@
                 .text {
                     font-size: 2.5rem;
                 }
+
+                .board {
+                    display: none;
+                }
             }
 
             .cargo-content {
                 .text {
                     font-size: 2.5rem;
+                }
+
+                .board {
+                    display: none;
                 }
             }
         }
@@ -104,11 +112,19 @@
                 .text {
                     font-size: 2.2rem;
                 }
+
+                .board {
+                    display: block;
+                }
             }
 
             .cargo-content {
                 .text {
                     font-size: 2rem;
+                }
+
+                .board {
+                    display: block;
                 }
             }
         }
