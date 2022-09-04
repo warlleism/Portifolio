@@ -12,15 +12,11 @@
 }
 
 #dropArrow {
-    font-size: 70px;
+    font-size: 50px;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
-#dropArrow:hover {
-    cursor: pointer;
-    font-size: 90px;
-    transition: 0.5s
-}
 
 @keyframes Animacao {
     0% {
