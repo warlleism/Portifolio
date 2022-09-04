@@ -114,3 +114,32 @@
         }
     }
 }
+
+@media screen and (max-width: 280px) {
+
+    .main-header {
+        width: 100vw;
+
+        .header-content {
+            .name-content {
+                .text {
+                    font-size: 2.2rem;
+                }
+
+                .board {
+                    display: none;
+                }
+            }
+
+            .cargo-content {
+                .text {
+                    font-size: 2rem;
+                }
+
+                .board {
+                    display: none;
+                }
+            }
+        }
+    }
+}
