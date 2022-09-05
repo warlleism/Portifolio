@@ -1,10 +1,13 @@
 import React, { useContext, useEffect } from "react";
+import { useState } from "react";
 import { Context } from "../../context/provider";
 import Footer from "../footer";
 
 import "./style.scss"
 
 const Body = () => {
+
+    const [posicao, setPosicao] = useState(0)
 
     const { mode } = useContext(Context);
 
@@ -19,7 +22,7 @@ const Body = () => {
         const descThirdApp = window.document.getElementById("desc-third-app")
 
         window.addEventListener("scroll", () => {
-            console.log(parseInt(window.scrollY))
+            setPosicao(parseInt(window.scrollY))
             parseInt(window.scrollY) <= 0 ? about.style.transform = "translateX(-100%)" : about.style.transform = "translateX(5%)"
             parseInt(window.scrollY) <= 1000 ? descApp.style.transform = "translateX(-100%)" : descApp.style.transform = "translateX(0%)"
             parseInt(window.scrollY) <= 2500 ? descSecondApp.style.transform = "translateX(-100%)" : descSecondApp.style.transform = "translateX(0%)"
@@ -30,6 +33,7 @@ const Body = () => {
 
     return (
         <>
+            {console.log(posicao > parseInt(window.scrollY) ? "desceu" : "subiu")}
             <div className="main-body" style={{ backgroundColor: mode ? "" : "#454645" }}>
                 <div className="content-desc" style={{ backgroundColor: mode ? "" : "#454645" }}>
                     <div className="about" id="about" style={{ color: mode ? "" : "#ffffff2e" }}>SOBRE MIM</div>
@@ -105,7 +109,7 @@ const Body = () => {
                         </div>
                     </div>
                 </div>
-                    <Footer />
+                <Footer />
             </div>
         </>
     )
