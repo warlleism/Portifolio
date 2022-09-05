@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import { Context } from "../../context/provider";
-import Footer from "../footer";
 
 import "./style.scss"
 
@@ -109,7 +108,6 @@ const Body = () => {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         </>
     )
