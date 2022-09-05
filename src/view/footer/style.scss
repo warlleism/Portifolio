@@ -38,12 +38,25 @@
 
 @media screen and (max-width: 1787px) {
     .container-images {
+
+        // .text-contacts{
+        //     display: none;
+        // }
         .contacts {
             padding: 10px;
             margin-left: 0px;
             justify-content: space-between;
             width: 70%;
 
+        }
+    }
+
+}
+
+@media screen and (max-width: 999px) {
+    .container-images {
+        .text-contacts {
+            display: none;
         }
     }
 

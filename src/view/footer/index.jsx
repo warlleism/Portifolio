@@ -5,16 +5,16 @@ import "./style.scss"
 
 const Footer = () => {
 
-    const { mode } = useContext(Context);
-
     useEffect(() => {
         showAbout()
     }, [])
 
+    const { mode } = useContext(Context);
+
     const showAbout = () => {
         const contact = window.document.getElementById("contact")
         window.addEventListener("scroll", () => {
-            window.scrollY < 7500 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-20%)"
+            return window.scrollY < 7500 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-20%)"
         })
     }
 
