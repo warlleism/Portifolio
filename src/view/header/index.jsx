@@ -11,7 +11,6 @@ const Header = () => {
         showContent()
     }, [])
 
-
     const DarkMode = () => {
         localStorage.setItem("mode", "Dark")
         setMode(false)

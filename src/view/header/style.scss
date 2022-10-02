@@ -4,7 +4,6 @@
 * {
     margin: 0px;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 .main-header {
@@ -25,16 +24,16 @@
     }
 
     .header-content {
-        position: absolute;
-        transform: translate(-50%, 50%);
         top: 35%;
         left: 50%;
         width: 100%;
         text-align: center;
+        position: absolute;
+        transform: translate(-50%, 50%);
 
         .name-content {
-            margin-bottom: 20px;
             position: relative;
+            margin-bottom: 20px;
 
             .text {
                 font-size: 7rem;
@@ -43,8 +42,8 @@
             }
 
             .board {
-                width: 100%;
                 top: 0;
+                width: 100%;
                 height: 140px;
                 position: absolute;
                 background-color: white;

@@ -1,18 +1,15 @@
 import React, { useContext, useEffect } from "react";
-import { useState } from "react";
 import { Context } from "../../context/provider";
 
 import "./style.scss"
 
 const Body = () => {
-
-    const [posicao, setPosicao] = useState(0)
-
-    const { mode } = useContext(Context);
-
+    
     useEffect(() => {
         showAbout()
     }, [])
+
+    const { mode } = useContext(Context);
 
     const showAbout = () => {
         const about = window.document.getElementById("about")
@@ -21,18 +18,16 @@ const Body = () => {
         const descThirdApp = window.document.getElementById("desc-third-app")
 
         window.addEventListener("scroll", () => {
-            setPosicao(parseInt(window.scrollY))
-            parseInt(window.scrollY) <= 0 ? about.style.transform = "translateX(-100%)" : about.style.transform = "translateX(5%)"
-            parseInt(window.scrollY) <= 1000 ? descApp.style.transform = "translateX(-100%)" : descApp.style.transform = "translateX(0%)"
-            parseInt(window.scrollY) <= 2500 ? descSecondApp.style.transform = "translateX(-100%)" : descSecondApp.style.transform = "translateX(0%)"
-            parseInt(window.scrollY) <= 4513 ? descThirdApp.style.transform = "translateX(-100%)" : descThirdApp.style.transform = "translateX(0%)"
+            const windowScroll = parseInt(window.scrollY)
+            windowScroll <= 0 ? about.style.transform = "translateX(-100%)" : about.style.transform = "translateX(5%)"
+            windowScroll <= 1000 ? descApp.style.transform = "translateX(-100%)" : descApp.style.transform = "translateX(0%)"
+            windowScroll <= 2500 ? descSecondApp.style.transform = "translateX(-100%)" : descSecondApp.style.transform = "translateX(0%)"
+            windowScroll <= 4513 ? descThirdApp.style.transform = "translateX(-100%)" : descThirdApp.style.transform = "translateX(0%)"
         })
     }
 
-
     return (
         <>
-            {console.log(posicao > parseInt(window.scrollY) ? "desceu" : "subiu")}
             <div className="main-body" style={{ backgroundColor: mode ? "" : "#454645" }}>
                 <div className="content-desc" style={{ backgroundColor: mode ? "" : "#454645" }}>
                     <div className="about" id="about" style={{ color: mode ? "" : "#ffffff2e" }}>SOBRE MIM</div>

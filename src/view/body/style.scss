@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
+
     ::-webkit-scrollbar {
         width: 6px;
-        
+
     }
 
     ::-webkit-scrollbar-track {
         background: #9e9d9d;
-        
+
     }
 
     ::-webkit-scrollbar-thumb {
@@ -169,7 +170,7 @@
     }
 
     .main-body {
-        width: 100vw;
+        width: 100%;
         margin-top: 0px;
 
         .footerContent {
