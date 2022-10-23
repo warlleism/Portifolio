@@ -53,19 +53,19 @@
 
   .app-content {
     display: flex;
-    flex-direction: row;
     width: 100%;
+    flex-direction: row;
 
     .desc-app {
-      font-family: "Roboto", sans-serif;
-      margin-top: 400px;
-      padding: 40px;
       width: 50%;
       height: 800px;
+      padding: 40px;
       display: flex;
+      margin-top: 400px;
       flex-direction: column;
+      transition: 1s ease-in-out;
       justify-content: space-between;
-      transition: .2s ease-in-out;
+      font-family: "Roboto", sans-serif;
 
       .system {
         font-size: 2.5rem;
