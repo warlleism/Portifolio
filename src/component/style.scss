@@ -1,33 +1,32 @@
 .container-buttom {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    animation-name: Animacao;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-timing-function: linear;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  animation-duration: 4s;
+  animation-duration: 3s;
+  justify-content: center;
+  animation-name: Animacao;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 #dropArrow {
-    font-size: 50px;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+  cursor: pointer;
+  font-size: 50px;
+  transition: 0.5s ease-in-out;
 }
 
-
 @keyframes Animacao {
-    0% {
-        bottom: 0px;
-    }
+  0% {
+    bottom: 0px;
+  }
 
-    50% {
-        bottom: 30px;
-    }
+  50% {
+    bottom: 30px;
+  }
 
-    100% {
-        bottom: 0px;
-    }
+  100% {
+    bottom: 0px;
+  }
 }

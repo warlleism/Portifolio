@@ -228,7 +228,15 @@
 
 @media screen and (max-width: 471px) {
   .main-header {
-    width: 100vw;
+    .header-list {
+      .name-person {
+        font-size: 1.7rem;
+      }
+    }
+
+    .mobile-bar {
+      top: 14px;
+    }
 
     .header-content {
       .name-content {
@@ -236,7 +244,6 @@
           display: block;
         }
       }
-
       .cargo-content {
         .text {
           font-size: 2rem;
@@ -246,6 +253,19 @@
           display: block;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 471px) {
+  .main-header {
+    .header-list {
+      .name-person {
+        font-size: 1.4rem;
+      }
+    }
+    .mobile-bar {
+      top: 10px;
     }
   }
 }

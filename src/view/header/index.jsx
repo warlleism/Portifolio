@@ -52,9 +52,23 @@ const Header = () => {
       style={{ backgroundColor: mode ? "" : "#454645" }}
     >
       <div className="header-list" id="header">
-        <div className="name-person">
-          <strong style={{ color: "#d9115b", fontWeight: 400 }}>W</strong>ARLLEI{" "}
-          <strong style={{ fontWeight: 400, color: "#d9115b", marginLeft: 10 }}>
+        <div
+          className="name-person"
+          style={{ color: mode ? "#00000090" : "#ffff" }}
+        >
+          <strong
+            style={{ color: mode ? "#ffff" : "#d9115b", fontWeight: 400 }}
+          >
+            W
+          </strong>
+          ARLLEI{" "}
+          <strong
+            style={{
+              color: mode ? "#ffff" : "#d9115b",
+              fontWeight: 400,
+              marginLeft: 10,
+            }}
+          >
             M
           </strong>
           ARTINS
