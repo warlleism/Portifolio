@@ -21,20 +21,18 @@
     font-weight: 500;
     color: #ffffff;
     text-align: center;
-    outline: 2px solid;
     animation-name: bar;
     border-radius: 100px;
     flex-direction: column;
     animation-duration: 1s;
-    outline-color: #ffffff;
     z-index: 99999999999999999;
+    border: #ffffff 2px solid;
     animation-iteration-count: infinite;
   }
 
   @keyframes bar {
     100% {
-      outline-offset: 10px;
-      outline-color: rgba(71, 126, 232, 0);
+      border: solid 2px rgba(71, 126, 232, 0);
     }
   }
 

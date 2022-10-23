@@ -81,7 +81,7 @@ const Header = () => {
       <div className="mobile-bar" onClick={() => showSide()}>
         <div
           style={{
-            outline: "2px solid #ffff",
+            border: "2px solid #ffff",
             padding: 10,
             borderRadius: 100,
           }}
