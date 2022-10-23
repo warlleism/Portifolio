@@ -42,7 +42,7 @@
     top: 0;
     z-index: 99;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: none;
     position: fixed;
     align-items: center;
@@ -51,12 +51,12 @@
     transition: 0.2s ease-in-out;
 
     ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
       width: 100%;
       height: 100%;
+      display: flex;
       list-style: none;
+      flex-direction: column;
+      justify-content: space-around;
 
       li {
         width: 100%;
@@ -183,6 +183,10 @@
 @media screen and (max-width: 960px) {
   .main-header {
     .header-list {
+      .name-person {
+        justify-content: flex-start;
+        width: 100%;
+      }
       ul {
         display: none;
       }
