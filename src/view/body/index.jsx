@@ -33,7 +33,7 @@ const Body = () => {
             <div className="main-body" style={{ backgroundColor: mode ? "" : "#454645" }}>
                 <div className="content-desc" style={{ backgroundColor: mode ? "" : "#454645" }}>
                     <div className="about" id="about" style={{ color: mode ? "" : "#ffffff2e" }}>SOBRE MIM</div>
-                    <div className="desc" style={{ color: mode ? "" : "#ffff" }}>Olá, <strong style={{ color: "#e525aa", fontSize: 24 }}>Seja bem vindo</strong>! Meu nome é Warllei Martins, espero que esteja tudo bem com você. Tenho 26 anos e sou estudante de Análise e desenvolvimento de sistemas pela "Universidade de Vila Velha". Sou um desenvolvedor front-end em busca de me tornar full stack. Com profundo interesse em conhecer, aprender e desenvolver venho me dedicado a este apaixonante mundo da programação.</div>
+                    <div className="desc" style={{ color: mode ? "" : "#ffff" }}>Olá, <strong style={{ color: "#d9115b", fontSize: 24 }}>Seja bem vindo</strong>! Meu nome é Warllei Martins, espero que esteja tudo bem com você. Tenho 26 anos e sou estudante de Análise e desenvolvimento de sistemas pela "Universidade de Vila Velha". Sou um desenvolvedor front-end em busca de me tornar full stack. Com profundo interesse em conhecer, aprender e desenvolver venho me dedicado a este apaixonante mundo da programação.</div>
                 </div>
 
                 <div className="app-content" style={{ backgroundColor: mode ? "" : "#454645" }}>
