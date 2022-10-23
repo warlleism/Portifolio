@@ -14,13 +14,13 @@ const Footer = () => {
     const showAbout = () => {
         const contact = window.document.getElementById("contact")
         window.addEventListener("scroll", () => {
-            return window.scrollY < 7500 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-20%)"
+            return window.scrollY < 13397 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-20%)"
         })
     }
 
     return (
         <div className="container-images" style={{ backgroundColor: mode ? "" : "#454645" }}>
-            <div id="contact" className="text-contacts" style={{ color: mode ? "" : "#ffff" }}>Contatos</div>
+            <div id="contact" className="text-contacts" style={{ color: mode ? "" : "#ffffff41", pointerEvents: "none" }}>Contatos</div>
             <div className="contacts">
                 <a href="https://www.linkedin.com/in/warllei-martins-823510153/" target="blank"><img src={require("../../image/icons/linkedin.png")} alt="" /></a>
                 <a href="https://github.com/warlleism" target="blank"><img src={require("../../image/icons/github.png")} alt="" /></a>

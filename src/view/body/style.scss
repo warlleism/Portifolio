@@ -107,15 +107,22 @@
     }
 
     .image-app {
-      margin-top: 400px;
       width: 50%;
       display: flex;
+      transition: 1.5s;
+      margin-top: 400px;
+      align-items: center;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      transition: 1.5s;
 
       div {
+        .web-app-left {
+          margin-left: 40px;
+        }
+        .web-app-left {
+          margin-left: -70px;
+        }
+
         .bottonMarginPhoto {
           margin-bottom: 150px;
         }
@@ -245,6 +252,13 @@
           flex-direction: row;
           justify-content: center;
           align-items: center;
+
+          .web-app-left {
+            margin-left: 0px ;
+          }
+          .web-app-rigth {
+            margin-left: 0px ;
+          }
 
           .web-app {
             max-width: 95%;
