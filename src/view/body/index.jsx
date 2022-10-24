@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import { useState } from "react";
 import { Context } from "../../context/provider";
 
 import "./style.scss";
@@ -7,6 +8,8 @@ const Body = () => {
   useEffect(() => {
     showAbout();
   }, []);
+  const [img, setImg] = useState('')
+  const [imgwEB, setImgWeb] = useState('')
 
   const { mode } = useContext(Context);
 
@@ -22,7 +25,6 @@ const Body = () => {
 
     window.addEventListener("scroll", () => {
       const windowScroll = parseInt(window.scrollY);
-      console.log(windowScroll);
       windowScroll <= 0
         ? (about.style.transform = "translateX(-100%)")
         : (about.style.transform = "translateX(5%)");
@@ -52,6 +54,27 @@ const Body = () => {
 
   return (
     <>
+      {
+        img != '' &&
+        (
+          <div className="modal-img">
+            <img className="modal-mobile" src={img} />
+            <div className="close-butom" onClick={() => setImg('')}>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        )
+      }
+      {
+        imgwEB != '' &&
+        (
+          <div className="modal-img">
+            <img className="modal-web" src={imgwEB} />
+            <div className="close-butom" onClick={() => setImgWeb('')}>x</div>
+          </div>
+        )
+      }
       <div
         className="main-body"
         style={{ backgroundColor: mode ? "" : "#454645" }}
@@ -114,17 +137,22 @@ const Body = () => {
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/png2.png")}
-                alt=""
+                onClick={() => setImg(require("../../image/png2.png"))}
               />
-              <img src={require("../../image/png1.png")} alt="" />
+              <img
+                src={require("../../image/png1.png")}
+                onClick={() => setImg(require("../../image/png1.png"))} />
             </div>
             <div>
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/png3.png")}
-                alt=""
+                onClick={() => setImg(require("../../image/png3.png"))}
               />
-              <img src={require("../../image/png4.png")} alt="" />
+              <img
+                src={require("../../image/png4.png")}
+                onClick={() => setImg(require("../../image/png4.png"))}
+              />
             </div>
           </div>
         </div>
@@ -161,15 +189,18 @@ const Body = () => {
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/picpay-png1.png")}
-                alt=""
+                onClick={() => setImg(require("../../image/picpay-png1.png"))}
               />
-              <img src={require("../../image/picpay-png2.png")} alt="" />
+              <img
+                src={require("../../image/picpay-png2.png")}
+                onClick={() => setImg(require("../../image/picpay-png2.png"))}
+              />
             </div>
             <div>
               <img
                 className="thirdPhoto"
                 src={require("../../image/picpay-png3.png")}
-                alt=""
+                onClick={() => setImg(require("../../image/picpay-png3.png"))}
               />
             </div>
           </div>
@@ -207,20 +238,23 @@ const Body = () => {
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/spotify1.png")}
-                alt=""
+                onClick={() => setImg(require("../../image/spotify1.png"))}
               />
-              <img src={require("../../image/spotify2.png")} alt="" />
+              <img
+                src={require("../../image/spotify2.png")}
+                onClick={() => setImg(require("../../image/spotify2.png"))}
+              />
             </div>
             <div>
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/spotify3.png")}
-                alt=""
+                onClick={() => setImg(require("../../image/spotify3.png"))}
               />
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/spotify4.png")}
-                alt=""
+                onClick={() => setImg(require("../../image/spotify4.png"))}
               />
             </div>
           </div>
@@ -259,12 +293,12 @@ const Body = () => {
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/netflix-home-clone-1.png")}
-                alt=""
+                onClick={() => setImgWeb(require("../../image/netflix-home-clone-1.png"))}
               />
               <img
                 className="web-app  web-app-left"
                 src={require("../../image/netflix-home-clone-2.png")}
-                alt=""
+                onClick={() => setImgWeb(require("../../image/netflix-home-clone-2.png"))}
               />
             </div>
           </div>
@@ -302,17 +336,17 @@ const Body = () => {
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/ecommerce1.png")}
-                alt=""
+
               />
               <img
                 className="web-app web-app-left "
                 src={require("../../image/ecommerce4.png")}
-                alt=""
+
               />
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/ecommerce3.png")}
-                alt=""
+
               />
             </div>
           </div>
@@ -349,12 +383,12 @@ const Body = () => {
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/nerdstore2.png")}
-                alt=""
+
               />
               <img
                 className="web-app web-app-left"
                 src={require("../../image/nerdstore1.png")}
-                alt=""
+
               />
             </div>
           </div>
@@ -393,17 +427,17 @@ const Body = () => {
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/jovemNerd1.png")}
-                alt=""
+
               />
               <img
                 className="web-app web-app-left"
                 src={require("../../image/jovemNerd2.png")}
-                alt=""
+
               />
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/jovemNerd3.png")}
-                alt=""
+
               />
             </div>
           </div>
