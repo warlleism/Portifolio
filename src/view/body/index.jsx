@@ -52,13 +52,41 @@ const Body = () => {
     });
   };
 
+  const ViewContentMobile = (require) => {
+
+    setImg(require)
+
+    setTimeout(() => {
+      const modal = document.querySelector("#modal-img")
+      const img = document.querySelector("#img")
+      modal.style.width = '100%'
+      modal.style.height = '100vh'
+      img.style.opacity = 1
+    }, 100)
+
+  }
+
+  const ViewContentWeb = (require) => {
+
+    setImgWeb(require)
+
+    setTimeout(() => {
+      const modal = document.querySelector("#modal-img")
+      const img = document.querySelector("#img-web")
+      modal.style.width = '100%'
+      modal.style.height = '100vh'
+      img.style.opacity = 1
+    }, 100)
+
+  }
+
   return (
     <>
       {
         img != '' &&
         (
-          <div className="modal-img">
-            <img className="modal-mobile" src={img} />
+          <div className="modal-img" id="modal-img">
+            <img className="modal-mobile" id="img" src={img} onClick={() => setImg('')} />
             <div className="close-butom" onClick={() => setImg('')}>
               <div></div>
               <div></div>
@@ -69,8 +97,8 @@ const Body = () => {
       {
         imgwEB != '' &&
         (
-          <div className="modal-img">
-            <img className="modal-web" src={imgwEB} />
+          <div className="modal-img" id="modal-img">
+            <img className="modal-web" id="img-web" src={imgwEB} onClick={() => setImgWeb('')} />
             <div className="close-butom" onClick={() => setImgWeb('')}>
               <div></div>
               <div></div>
@@ -138,23 +166,27 @@ const Body = () => {
           <div className="image-app">
             <div>
               <img
+                id="img-info"
                 className="bottonMarginPhoto"
                 src={require("../../image/png2.png")}
-                onClick={() => setImg(require("../../image/png2.png"))}
+                onClick={() => ViewContentMobile(require("../../image/png2.png"))}
               />
               <img
                 src={require("../../image/png1.png")}
-                onClick={() => setImg(require("../../image/png1.png"))} />
+                onClick={() => ViewContentMobile(require("../../image/png1.png"))}
+
+              />
             </div>
             <div>
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/png3.png")}
-                onClick={() => setImg(require("../../image/png3.png"))}
+                onClick={() => ViewContentMobile(require("../../image/png3.png"))}
+
               />
               <img
                 src={require("../../image/png4.png")}
-                onClick={() => setImg(require("../../image/png4.png"))}
+                onClick={() => ViewContentMobile(require("../../image/png4.png"))}
               />
             </div>
           </div>
@@ -192,18 +224,18 @@ const Body = () => {
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/picpay-png1.png")}
-                onClick={() => setImg(require("../../image/picpay-png1.png"))}
+                onClick={() => ViewContentMobile(require("../../image/picpay-png1.png"))}
               />
               <img
                 src={require("../../image/picpay-png2.png")}
-                onClick={() => setImg(require("../../image/picpay-png2.png"))}
+                onClick={() => ViewContentMobile(require("../../image/picpay-png2.png"))}
               />
             </div>
             <div>
               <img
                 className="thirdPhoto"
                 src={require("../../image/picpay-png3.png")}
-                onClick={() => setImg(require("../../image/picpay-png3.png"))}
+                onClick={() => ViewContentMobile(require("../../image/picpay-png3.png"))}
               />
             </div>
           </div>
@@ -241,23 +273,23 @@ const Body = () => {
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/spotify1.png")}
-                onClick={() => setImg(require("../../image/spotify1.png"))}
+                onClick={() => ViewContentMobile(require("../../image/spotify1.png"))}
               />
               <img
                 src={require("../../image/spotify2.png")}
-                onClick={() => setImg(require("../../image/spotify2.png"))}
+                onClick={() => ViewContentMobile(require("../../image/spotify2.png"))}
               />
             </div>
             <div>
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/spotify3.png")}
-                onClick={() => setImg(require("../../image/spotify3.png"))}
+                onClick={() => ViewContentMobile(require("../../image/spotify3.png"))}
               />
               <img
                 className="bottonMarginPhoto"
                 src={require("../../image/spotify4.png")}
-                onClick={() => setImg(require("../../image/spotify4.png"))}
+                onClick={() => ViewContentMobile(require("../../image/spotify4.png"))}
               />
             </div>
           </div>
@@ -296,12 +328,12 @@ const Body = () => {
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/netflix-home-clone-1.png")}
-                onClick={() => setImgWeb(require("../../image/netflix-home-clone-1.png"))}
+                onClick={() => ViewContentWeb(require("../../image/netflix-home-clone-1.png"))}
               />
               <img
                 className="web-app  web-app-left"
                 src={require("../../image/netflix-home-clone-2.png")}
-                onClick={() => setImgWeb(require("../../image/netflix-home-clone-2.png"))}
+                onClick={() => ViewContentWeb(require("../../image/netflix-home-clone-2.png"))}
               />
             </div>
           </div>
@@ -314,7 +346,7 @@ const Body = () => {
           <div id="desc-fifth-app" className="desc-app">
             <div>
               <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>
-                ReactJs / NodeJs / MySql
+                Full Stack
               </div>
               <div className="project" style={{ color: mode ? "" : "#ffff" }}>
                 E-commerce
@@ -339,17 +371,17 @@ const Body = () => {
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/ecommerce1.png")}
-
+                onClick={() => ViewContentWeb(require("../../image/ecommerce1.png"))}
               />
               <img
                 className="web-app web-app-left "
                 src={require("../../image/ecommerce4.png")}
-
+                onClick={() => ViewContentWeb(require("../../image/ecommerce4.png"))}
               />
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/ecommerce3.png")}
-
+                onClick={() => ViewContentWeb(require("../../image/ecommerce3.png"))}
               />
             </div>
           </div>
@@ -386,12 +418,12 @@ const Body = () => {
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/nerdstore2.png")}
-
+                onClick={() => ViewContentWeb(require("../../image/nerdstore2.png"))}
               />
               <img
                 className="web-app web-app-left"
                 src={require("../../image/nerdstore1.png")}
-
+                onClick={() => ViewContentWeb(require("../../image/nerdstore1.png"))}
               />
             </div>
           </div>
@@ -430,17 +462,17 @@ const Body = () => {
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/jovemNerd1.png")}
-
+                onClick={() => ViewContentWeb(require("../../image/jovemNerd1.png"))}
               />
               <img
                 className="web-app web-app-left"
                 src={require("../../image/jovemNerd2.png")}
-
+                onClick={() => ViewContentWeb(require("../../image/jovemNerd2.png"))}
               />
               <img
                 className="web-app web-app-rigth"
                 src={require("../../image/jovemNerd3.png")}
-
+                onClick={() => ViewContentWeb(require("../../image/jovemNerd3.png"))}
               />
             </div>
           </div>

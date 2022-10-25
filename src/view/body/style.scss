@@ -17,25 +17,30 @@
 }
 
 .modal-img {
-  display: none;
   top: 0;
-  width: 100%;
-  height: 100vh;
+  width: 0;
+  height: 0;
+  display: none;
   position: fixed;
   align-items: center;
   z-index: 999999999999;
   justify-content: center;
+  transition: 0.5s ease-in-out;
   background-color: rgb(37, 37, 37);
 
   .modal-mobile {
+    opacity: 0;
     max-width: 80vw;
+    transition: 2s ease-in-out;
   }
 
   .modal-web {
-    width: 90vw;
+    width: 200vw;
+    opacity: 0;
     height: 40vh;
     margin-top: 20px;
     transform: rotate(90deg);
+    transition: 2s ease-in-out;
   }
 
   .close-butom {
@@ -222,7 +227,6 @@
   }
 }
 
-
 @media screen and (max-width: 1321px) {
   .img1 {
     max-width: 430px !important;
@@ -230,6 +234,19 @@
 
   .modal-img {
     display: flex;
+    width: 100vw;
+    overflow: hidden;
+
+    .modal-mobile {
+      max-width: 80vw;
+    }
+
+    .modal-web {
+      width: 100vh;
+      height: 40vh;
+      margin-top: 20px;
+      transform: rotate(90deg);
+    }
   }
 
   .main-body {
@@ -344,20 +361,35 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   .image-app {
     div {
       img {
-        width: 133px !important;
+        width: 44vw !important;
         transition: 1s;
-        margin-left: 20px;
+        margin: 0 17px 0 0;
       }
+    }
 
-      img:hover {
-        transition: 1s;
-        width: 168px !important;
-        margin-right: 20px;
-      }
+    .web-app {
+      width: 100% !important;
+    }
+  }
+
+  .modal-img {
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+
+    .modal-mobile {
+      max-width: 80vw;
+    }
+
+    .modal-web {
+      width: 200vh;
+      height: 40vh;
+      margin-top: 20px;
+      transform: rotate(90deg);
     }
   }
 }
