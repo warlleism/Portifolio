@@ -71,7 +71,10 @@ const Body = () => {
         (
           <div className="modal-img">
             <img className="modal-web" src={imgwEB} />
-            <div className="close-butom" onClick={() => setImgWeb('')}>x</div>
+            <div className="close-butom" onClick={() => setImgWeb('')}>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         )
       }
