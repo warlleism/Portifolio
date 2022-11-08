@@ -394,18 +394,16 @@ const Body = () => {
           <div id="desc-sixth-app" className="desc-app">
             <div>
               <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>
-                ReactJs
+                Figma
               </div>
               <div className="project" style={{ color: mode ? "" : "#ffff" }}>
-                Clone E-commerce Nerdstore
+                Projetos de designer
               </div>
               <div
                 className="desc-projeto"
                 style={{ color: mode ? "" : "#ffff" }}
               >
-                Produtos e presentes criativos especialmente selecionados para o
-                público nerd. Aproveite! Temos camisetas, livros, copos, canecas
-                e muito mais, com preços que cabem no seu bolso.
+                Landing Pages
               </div>
             </div>
             <div className="system" style={{ color: mode ? "" : "#ffff" }}>
@@ -417,13 +415,13 @@ const Body = () => {
             <div style={{ display: "flex", flexDirection: "column" }}>
               <img
                 className="web-app web-app-rigth"
-                src={require("../../image/nerdstore2.png")}
-                onClick={() => ViewContentWeb(require("../../image/nerdstore2.png"))}
+                src={require("../../image/landing-page.png")}
+                onClick={() => ViewContentWeb(require("../../image/landing-page.png"))}
               />
               <img
                 className="web-app web-app-left"
-                src={require("../../image/nerdstore1.png")}
-                onClick={() => ViewContentWeb(require("../../image/nerdstore1.png"))}
+                src={require("../../image/linkedin-reimaginate.png")}
+                onClick={() => ViewContentWeb(require("../../image/linkedin-reimaginate.png"))}
               />
             </div>
           </div>
