@@ -407,7 +407,7 @@ const Body = () => {
               </div>
             </div>
             <div className="system" style={{ color: mode ? "" : "#ffff" }}>
-              App Web
+              Web Design
             </div>
           </div>
 
@@ -422,6 +422,96 @@ const Body = () => {
                 className="web-app web-app-left"
                 src={require("../../image/linkedin-reimaginate.png")}
                 onClick={() => ViewContentWeb(require("../../image/linkedin-reimaginate.png"))}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="app-content"
+          style={{ backgroundColor: mode ? "" : "#454645" }}
+        >
+          <div id="desc-seventh-app" className="desc-app">
+            <div>
+              <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>
+                Figma
+              </div>
+              <div className="project" style={{ color: mode ? "" : "#ffff" }}>
+                Projetos de designer
+              </div>
+              <div
+                className="desc-projeto"
+                style={{ color: mode ? "" : "#ffff" }}
+              >
+                Website
+              </div>
+            </div>
+            <div className="system" style={{ color: mode ? "" : "#ffff" }}>
+              Web Design
+            </div>
+          </div>
+
+          <div className="image-app">
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <img
+                className="web-app web-app-rigth"
+                src={require("../../image/nissan1.png")}
+                onClick={() => ViewContentWeb(require("../../image/nissan1.png"))}
+              />
+              <img
+                className="web-app web-app-left"
+                src={require("../../image/nissan2.png")}
+                onClick={() => ViewContentWeb(require("../../image/nissan2.png"))}
+              />
+              <img
+                className="web-app web-app-rigth"
+                src={require("../../image/nissan3.png")}
+                onClick={() => ViewContentWeb(require("../../image/nissan3.png"))}
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div
+          className="app-content"
+          style={{ backgroundColor: mode ? "" : "#454645" }}
+        >
+          <div id="desc-seventh-app" className="desc-app">
+            <div>
+              <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>
+                Figma
+              </div>
+              <div className="project" style={{ color: mode ? "" : "#ffff" }}>
+                Projetos de designer
+              </div>
+              <div
+                className="desc-projeto"
+                style={{ color: mode ? "" : "#ffff" }}
+              >
+                Website
+              </div>
+            </div>
+            <div className="system" style={{ color: mode ? "" : "#ffff" }}>
+              Web Design
+            </div>
+          </div>
+
+          <div className="image-app">
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <img
+                className="web-app web-app-rigth"
+                src={require("../../image/nike1.png")}
+                onClick={() => ViewContentWeb(require("../../image/nike1.png"))}
+              />
+              <img
+                className="web-app web-app-left"
+                src={require("../../image/nike2.png")}
+                onClick={() => ViewContentWeb(require("../../image/nike2.png"))}
+              />
+              <img
+                className="web-app web-app-rigth"
+                src={require("../../image/nike3.png")}
+                onClick={() => ViewContentWeb(require("../../image/nike3.png"))}
               />
             </div>
           </div>
