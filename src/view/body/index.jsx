@@ -22,9 +22,19 @@ const Body = () => {
     const descfifthApp = window.document.getElementById("desc-fifth-app");
     const descSixthApp = window.document.getElementById("desc-sixth-app");
     const descSeventhApp = window.document.getElementById("desc-seventh-app");
+    const descOctaveApp = window.document.getElementById("desc-octave-app");
+    const descNinthApp = window.document.getElementById("desc-ninth-app");
+    const descTenthApp = window.document.getElementById("desc-tenth-app");
 
     window.addEventListener("scroll", () => {
       const windowScroll = parseInt(window.scrollY);
+      console.log(windowScroll)
+      windowScroll <= 13900
+        ? (descNinthApp.style.transform = "translateX(-100%)")
+        : (descNinthApp.style.transform = "translateX(0%)");
+      windowScroll <= 16000
+        ? (descTenthApp.style.transform = "translateX(-100%)")
+        : (descTenthApp.style.transform = "translateX(0%)");
       windowScroll <= 0
         ? (about.style.transform = "translateX(-100%)")
         : (about.style.transform = "translateX(5%)");
@@ -49,6 +59,10 @@ const Body = () => {
       windowScroll <= 11800
         ? (descSeventhApp.style.transform = "translateX(-100%)")
         : (descSeventhApp.style.transform = "translateX(0%)");
+      windowScroll <= 12900
+        ? (descOctaveApp.style.transform = "translateX(-100%)")
+        : (descOctaveApp.style.transform = "translateX(0%)");
+
     });
   };
 
@@ -471,12 +485,12 @@ const Body = () => {
             </div>
           </div>
         </div>
-        
+
         <div
           className="app-content"
           style={{ backgroundColor: mode ? "" : "#454645" }}
         >
-          <div id="desc-seventh-app" className="desc-app">
+          <div id="desc-ninth-app" className="desc-app">
             <div>
               <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>
                 Figma
@@ -521,7 +535,7 @@ const Body = () => {
           className="app-content"
           style={{ backgroundColor: mode ? "" : "#454645" }}
         >
-          <div id="desc-seventh-app" className="desc-app">
+          <div id="desc-tenth-app" className="desc-app">
             <div>
               <div className="linguage" style={{ color: mode ? "" : "#ffff" }}>
                 ReactJs

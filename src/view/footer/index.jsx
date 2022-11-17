@@ -14,7 +14,7 @@ const Footer = () => {
     const showAbout = () => {
         const contact = window.document.getElementById("contact")
         window.addEventListener("scroll", () => {
-            return window.scrollY < 13397 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-20%)"
+            return window.scrollY < 17598 ? contact.style.transform = "translateX(-100%)" : contact.style.transform = "translateX(-20%)"
         })
     }
 
