@@ -14,57 +14,13 @@ const Body = () => {
   const { mode } = useContext(Context);
 
   const showAbout = () => {
-    const about = window.document.getElementById("about");
-    const descApp = window.document.getElementById("desc-app");
-    const descSecondApp = window.document.getElementById("desc-second-app");
-    const descThirdApp = window.document.getElementById("desc-third-app");
-    const descFourthApp = window.document.getElementById("desc-fourth-app");
-    const descfifthApp = window.document.getElementById("desc-fifth-app");
-    const descSixthApp = window.document.getElementById("desc-sixth-app");
-    const descSeventhApp = window.document.getElementById("desc-seventh-app");
-    const descOctaveApp = window.document.getElementById("desc-octave-app");
-    const descNinthApp = window.document.getElementById("desc-ninth-app");
-    const descTenthApp = window.document.getElementById("desc-tenth-app");
+    const about=window.document.getElementById("about");const descApp=window.document.getElementById("desc-app");const descSecondApp=window.document.getElementById("desc-second-app");const descThirdApp=window.document.getElementById("desc-third-app");const descFourthApp=window.document.getElementById("desc-fourth-app");const descfifthApp=window.document.getElementById("desc-fifth-app");const descSixthApp=window.document.getElementById("desc-sixth-app");const descSeventhApp=window.document.getElementById("desc-seventh-app");const descOctaveApp=window.document.getElementById("desc-octave-app");const descNinthApp=window.document.getElementById("desc-ninth-app");const descTenthApp=window.document.getElementById("desc-tenth-app");
 
     window.addEventListener("scroll", () => {
       const windowScroll = parseInt(window.scrollY);
-      console.log(windowScroll)
-      windowScroll <= 13900
-        ? (descNinthApp.style.transform = "translateX(-100%)")
-        : (descNinthApp.style.transform = "translateX(0%)");
-      windowScroll <= 16000
-        ? (descTenthApp.style.transform = "translateX(-100%)")
-        : (descTenthApp.style.transform = "translateX(0%)");
-      windowScroll <= 0
-        ? (about.style.transform = "translateX(-100%)")
-        : (about.style.transform = "translateX(5%)");
-      windowScroll <= 600
-        ? (descApp.style.transform = "translateX(-100%)")
-        : (descApp.style.transform = "translateX(0%)");
-      windowScroll <= 3025
-        ? (descSecondApp.style.transform = "translateX(-100%)")
-        : (descSecondApp.style.transform = "translateX(0%)");
-      windowScroll <= 5143
-        ? (descThirdApp.style.transform = "translateX(-100%)")
-        : (descThirdApp.style.transform = "translateX(0%)");
-      windowScroll <= 6909
-        ? (descFourthApp.style.transform = "translateX(-100%)")
-        : (descFourthApp.style.transform = "translateX(0%)");
-      windowScroll <= 8518
-        ? (descfifthApp.style.transform = "translateX(-100%)")
-        : (descfifthApp.style.transform = "translateX(0%)");
-      windowScroll <= 10305
-        ? (descSixthApp.style.transform = "translateX(-100%)")
-        : (descSixthApp.style.transform = "translateX(0%)");
-      windowScroll <= 11800
-        ? (descSeventhApp.style.transform = "translateX(-100%)")
-        : (descSeventhApp.style.transform = "translateX(0%)");
-      windowScroll <= 12900
-        ? (descOctaveApp.style.transform = "translateX(-100%)")
-        : (descOctaveApp.style.transform = "translateX(0%)");
-
-    });
-  };
+      windowScroll<=13900?(descNinthApp.style.transform="translateX(-100%)"):(descNinthApp.style.transform="translateX(0%)");windowScroll<=16000?(descTenthApp.style.transform="translateX(-100%)"):(descTenthApp.style.transform="translateX(0%)");windowScroll<=0?(about.style.transform="translateX(-100%)"):(about.style.transform="translateX(5%)");windowScroll<=600?(descApp.style.transform="translateX(-100%)"):(descApp.style.transform="translateX(0%)");windowScroll<=3025?(descSecondApp.style.transform="translateX(-100%)"):(descSecondApp.style.transform="translateX(0%)");windowScroll<=5143?(descThirdApp.style.transform="translateX(-100%)"):(descThirdApp.style.transform="translateX(0%)");windowScroll<=6909?(descFourthApp.style.transform="translateX(-100%)"):(descFourthApp.style.transform="translateX(0%)");windowScroll<=8518?(descfifthApp.style.transform="translateX(-100%)"):(descfifthApp.style.transform="translateX(0%)");windowScroll<=10305?(descSixthApp.style.transform="translateX(-100%)"):(descSixthApp.style.transform="translateX(0%)");windowScroll<=11800?(descSeventhApp.style.transform="translateX(-100%)"):(descSeventhApp.style.transform="translateX(0%)");windowScroll<=12900?(descOctaveApp.style.transform="translateX(-100%)"):(descOctaveApp.style.transform="translateX(0%)");
+    })
+  }
 
   const ViewContentMobile = (require) => {
 
