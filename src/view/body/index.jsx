@@ -533,7 +533,7 @@ const Body = () => {
               <img
                 className="web-app web-app-left"
                 src={require("../../image/harley-img4.png")}
-                onClick={() => ViewContentWeb(require("../../image/harley-img2.png"))}
+                onClick={() => ViewContentWeb(require("../../image/harley-img4.png"))}
               />
             </div>
           </div>
