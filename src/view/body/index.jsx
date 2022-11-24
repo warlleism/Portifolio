@@ -14,11 +14,11 @@ const Body = () => {
   const { mode } = useContext(Context);
 
   const showAbout = () => {
-    const about=window.document.getElementById("about");const descApp=window.document.getElementById("desc-app");const descSecondApp=window.document.getElementById("desc-second-app");const descThirdApp=window.document.getElementById("desc-third-app");const descFourthApp=window.document.getElementById("desc-fourth-app");const descfifthApp=window.document.getElementById("desc-fifth-app");const descSixthApp=window.document.getElementById("desc-sixth-app");const descSeventhApp=window.document.getElementById("desc-seventh-app");const descOctaveApp=window.document.getElementById("desc-octave-app");const descNinthApp=window.document.getElementById("desc-ninth-app");const descTenthApp=window.document.getElementById("desc-tenth-app");
+    const about = window.document.getElementById("about"); const descApp = window.document.getElementById("desc-app"); const descSecondApp = window.document.getElementById("desc-second-app"); const descThirdApp = window.document.getElementById("desc-third-app"); const descFourthApp = window.document.getElementById("desc-fourth-app"); const descfifthApp = window.document.getElementById("desc-fifth-app"); const descSixthApp = window.document.getElementById("desc-sixth-app"); const descSeventhApp = window.document.getElementById("desc-seventh-app"); const descOctaveApp = window.document.getElementById("desc-octave-app"); const descNinthApp = window.document.getElementById("desc-ninth-app"); const descTenthApp = window.document.getElementById("desc-tenth-app");
 
     window.addEventListener("scroll", () => {
       const windowScroll = parseInt(window.scrollY);
-      windowScroll<=13900?(descNinthApp.style.transform="translateX(-100%)"):(descNinthApp.style.transform="translateX(0%)");windowScroll<=16000?(descTenthApp.style.transform="translateX(-100%)"):(descTenthApp.style.transform="translateX(0%)");windowScroll<=0?(about.style.transform="translateX(-100%)"):(about.style.transform="translateX(5%)");windowScroll<=600?(descApp.style.transform="translateX(-100%)"):(descApp.style.transform="translateX(0%)");windowScroll<=3025?(descSecondApp.style.transform="translateX(-100%)"):(descSecondApp.style.transform="translateX(0%)");windowScroll<=5143?(descThirdApp.style.transform="translateX(-100%)"):(descThirdApp.style.transform="translateX(0%)");windowScroll<=6909?(descFourthApp.style.transform="translateX(-100%)"):(descFourthApp.style.transform="translateX(0%)");windowScroll<=8518?(descfifthApp.style.transform="translateX(-100%)"):(descfifthApp.style.transform="translateX(0%)");windowScroll<=10305?(descSixthApp.style.transform="translateX(-100%)"):(descSixthApp.style.transform="translateX(0%)");windowScroll<=11800?(descSeventhApp.style.transform="translateX(-100%)"):(descSeventhApp.style.transform="translateX(0%)");windowScroll<=12900?(descOctaveApp.style.transform="translateX(-100%)"):(descOctaveApp.style.transform="translateX(0%)");
+      windowScroll <= 13900 ? (descNinthApp.style.transform = "translateX(-100%)") : (descNinthApp.style.transform = "translateX(0%)"); windowScroll <= 16000 ? (descTenthApp.style.transform = "translateX(-100%)") : (descTenthApp.style.transform = "translateX(0%)"); windowScroll <= 0 ? (about.style.transform = "translateX(-100%)") : (about.style.transform = "translateX(5%)"); windowScroll <= 600 ? (descApp.style.transform = "translateX(-100%)") : (descApp.style.transform = "translateX(0%)"); windowScroll <= 3025 ? (descSecondApp.style.transform = "translateX(-100%)") : (descSecondApp.style.transform = "translateX(0%)"); windowScroll <= 5143 ? (descThirdApp.style.transform = "translateX(-100%)") : (descThirdApp.style.transform = "translateX(0%)"); windowScroll <= 6909 ? (descFourthApp.style.transform = "translateX(-100%)") : (descFourthApp.style.transform = "translateX(0%)"); windowScroll <= 8518 ? (descfifthApp.style.transform = "translateX(-100%)") : (descfifthApp.style.transform = "translateX(0%)"); windowScroll <= 10305 ? (descSixthApp.style.transform = "translateX(-100%)") : (descSixthApp.style.transform = "translateX(0%)"); windowScroll <= 11800 ? (descSeventhApp.style.transform = "translateX(-100%)") : (descSeventhApp.style.transform = "translateX(0%)"); windowScroll <= 12900 ? (descOctaveApp.style.transform = "translateX(-100%)") : (descOctaveApp.style.transform = "translateX(0%)");
     })
   }
 
@@ -497,17 +497,15 @@ const Body = () => {
                 ReactJs
               </div>
               <div className="project" style={{ color: mode ? "" : "#ffff" }}>
-                Clone Jovem Nerd website
+                Harley Davidson website
               </div>
               <div
                 className="desc-projeto"
                 style={{ color: mode ? "" : "#ffff" }}
               >
-                O Jovem Nerd é um blog brasileiro de humor e notícias, criado em
-                2002 por Alexandre Ottoni de Menezes e Deive Pazos Gerpe e
-                adquirido pela Magazine Luiza em abril de 2021, que aborda temas
-                sobre entretenimento, em especial, cinema, séries de televisão,
-                ficção científica, quadrinhos, role-playing game e viagens
+                Harley-Davidson Motor Cycles ou Harley é uma empresa fundada em Milwaukee,
+                nos Estados Unidos, no ano de 1903. É reconhecida mundialmente como uma marca
+                emblemática de motociclos e dedica-se à fabricação de motos de grande porte e cilindrada.
               </div>
             </div>
             <div className="system" style={{ color: mode ? "" : "#ffff" }}>
@@ -519,18 +517,23 @@ const Body = () => {
             <div style={{ display: "flex", flexDirection: "column" }}>
               <img
                 className="web-app web-app-rigth"
-                src={require("../../image/jovemNerd1.png")}
-                onClick={() => ViewContentWeb(require("../../image/jovemNerd1.png"))}
+                src={require("../../image/harley-img1.png")}
+                onClick={() => ViewContentWeb(require("../../image/harley-img1.png"))}
               />
               <img
                 className="web-app web-app-left"
-                src={require("../../image/jovemNerd2.png")}
-                onClick={() => ViewContentWeb(require("../../image/jovemNerd2.png"))}
+                src={require("../../image/harley-img2.png")}
+                onClick={() => ViewContentWeb(require("../../image/harley-img2.png"))}
               />
               <img
                 className="web-app web-app-rigth"
-                src={require("../../image/jovemNerd3.png")}
-                onClick={() => ViewContentWeb(require("../../image/jovemNerd3.png"))}
+                src={require("../../image/harley-img3.png")}
+                onClick={() => ViewContentWeb(require("../../image/harley-img3.png"))}
+              />
+              <img
+                className="web-app web-app-left"
+                src={require("../../image/harley-img4.png")}
+                onClick={() => ViewContentWeb(require("../../image/harley-img2.png"))}
               />
             </div>
           </div>
